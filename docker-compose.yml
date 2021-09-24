@@ -1,0 +1,14 @@
+
+version: '3.5'
+services:
+
+  filebeat:
+    build: .
+    restart: "always"
+    image: "samnew"
+    volumes:
+      - "/webapps/connector_tvs/celery.log:/webapps/connector_tvs/celery.log"
+      - "/webapps/connector_tvs/dem_view.log:/webapps/connector_tvs/dem_view.log"
+      - "/webapps/connector_tvs/sendpushlog.logs:/webapps/connector_tvs/sendpushlog.logs"
+      - "/var/log/nginx/tvsback/access.log:/var/log/nginx/access.log"
+    network_mode: host
