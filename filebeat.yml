@@ -160,10 +160,10 @@ setup.kibana:
   # In case you specify and additional path, the scheme is required: http://localhost:5601/path
   # IPv6 addresses should always be defined as: https://[2001:db8::1]:5601
   #host: "localhost:5601"
-  host: "https://65.1.213.81:5601"
+  host: ""
   ssl.verification_mode: "none"
   username: "elastic"
-  password: "AUDdAFBzX0IcmiauRaxe"
+  password: ""
 
 
   # Kibana Space ID
@@ -191,7 +191,7 @@ setup.kibana:
 # ---------------------------- Elasticsearch Output ----------------------------
 output.elasticsearch:
   # Array of hosts to connect to.
-  hosts: ["65.1.213.81:9200"]
+  hosts: [""]
 
   # Protocol - either `http` (default) or `https`.
   protocol: "https"
@@ -199,7 +199,7 @@ output.elasticsearch:
   # Authentication credentials - either API key or username/password.
   #api_key: "id:api_key"
   username: "elastic"
-  password: "AUDdAFBzX0IcmiauRaxe"
+  password: ""
   #indices:
   #  - index: "testtvs-%{[agent.version]}-%{+yyyy.MM.dd}"
 
